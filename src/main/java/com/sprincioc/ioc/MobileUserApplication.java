@@ -7,10 +7,11 @@ import com.sprincioc.ioc.service.VodaPhoneService;
 public class MobileUserApplication {
     public static void main(String[] args){
 
-        // Creating an object of JioService Class and use it manually:
-        JioService jioService = new JioService();
-        jioService.calling();
-        jioService.data();
+
+        // Creating an object of VodaPhoneService Class and use it manually:
+        VodaPhoneService vodaPhone = new VodaPhoneService();
+        vodaPhone.calling();
+        vodaPhone.data();
     }
 }
 
