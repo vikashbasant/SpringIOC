@@ -1,7 +1,7 @@
 package com.sprincioc.ioc;
 
 
-import com.sprincioc.ioc.service.JioService;
+import com.sprincioc.ioc.service.VodaPhoneService;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,9 +16,10 @@ public class MobileUserApplication {
 
         // Now we need to use an object which is created by spring IOC:
         // .getBean() method, return an object type Object:
-        JioService jio = (JioService) context.getBean("jio");
-        // calling JioService functionality:
-        jio.calling();
-        jio.data();
+        // Without type casting to VodaPhoneService:
+        VodaPhoneService voda = context.getBean("voda", VodaPhoneService.class);
+        // calling VodaService functionality:
+        voda.calling();
+        voda.data();
     }
 }
