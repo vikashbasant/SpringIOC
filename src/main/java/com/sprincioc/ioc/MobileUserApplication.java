@@ -1,6 +1,7 @@
 package com.sprincioc.ioc;
 
-import com.sprincioc.ioc.service.AirtelService;
+
+import com.sprincioc.ioc.service.JioService;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,9 +16,9 @@ public class MobileUserApplication {
 
         // Now we need to use an object which is created by spring IOC:
         // .getBean() method, return an object type Object:
-        AirtelService airtel = (AirtelService) context.getBean("airtel");
-        // calling AirtelService functionality:
-        airtel.calling();
-        airtel.data();
+        JioService jio = (JioService) context.getBean("jio");
+        // calling JioService functionality:
+        jio.calling();
+        jio.data();
     }
 }

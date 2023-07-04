@@ -2,12 +2,15 @@ package com.sprincioc.ioc.service;
 
 import com.sprincioc.ioc.uitl.SimService;
 import com.sprincioc.ioc.uitl.SimServiceType;
-import org.springframework.stereotype.Service;
-
 
 public class VodaPhoneService implements SimService {
+
+    public VodaPhoneService(){
+        System.out.println("VodaPhoneService No-args Constructor! Called");
+    }
     @Override
     public SimServiceType getServiceType () {
+
         return SimServiceType.VODAPHONE;
     }
 

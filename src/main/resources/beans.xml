@@ -8,6 +8,6 @@
 
 
     <!--provides fully qualified names of class:-->
-    <bean id="airtel" class="com.sprincioc.ioc.service.AirtelService"></bean>
+    <bean id="jio" class="com.sprincioc.ioc.service.JioService"></bean>
 
 </beans>
